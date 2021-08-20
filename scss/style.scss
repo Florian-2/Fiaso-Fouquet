@@ -472,6 +472,7 @@ section.navigation
     .container-menu
     {
         position: absolute;
+        left: 0;
         
         padding: 10rem 1rem 10rem 1rem;
         display: flex;
@@ -490,7 +491,7 @@ section.navigation
                 0%
                 {
                     opacity: 0.2;
-                    transform: translate(90px);
+                    transform: translateY(90px);
                 }
                 50%
                 {
@@ -499,7 +500,7 @@ section.navigation
                 100%
                 {
                     opacity: 1;
-                    transform: translate(0);
+                    transform: translateY(0);
                 }
             } 
         } 
