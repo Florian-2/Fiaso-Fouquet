@@ -44,7 +44,7 @@ header
 {
     width: 100%;
     height: 80vh;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(126, 74, 74, 0.4)),  url('/img/eggs.jpg') center center / cover no-repeat;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(126, 74, 74, 0.4)),  url('../img/eggs.jpg') center center / cover no-repeat;
     color: white;
     position: relative;
 
@@ -274,8 +274,8 @@ p
 
 section.presentation
 {
-    background: top 0 right 0px url('/img/oranges.jpg') no-repeat,
-                top 600px left 0px url('/img/spices.jpg') no-repeat;
+    background: top 0 right 0px url('../img/oranges.jpg') no-repeat,
+                top 600px left 0px url('../img/spices.jpg') no-repeat;
 
     .block
     {
