@@ -355,30 +355,29 @@ section.presentation
                 {
                     display: none;
                 }
-                
             }
-        }
+        } 
+    }
+}
 
-        a.more
-        {
-            display: inline-block;
-            font-size: 1.45rem;
-            vertical-align:baseline;
-            color: $primaire;
+a.more
+{
+    display: inline-block;
+    font-size: 1.45rem;
+    vertical-align:baseline;
+    color: $primaire;
 
-            &::after
-            {
-                content: ">";
-                display: inline-block;
-                margin-left: 0.5rem;
-                transition: transform 200ms;
-            }
+    &::after
+    {
+        content: ">";
+        display: inline-block;
+        margin-left: 0.5rem;
+        transition: transform 200ms;
+    }
 
-            &:hover::after
-            {
-                transform: translateX(5px);
-            }
-        }
+    &:hover::after
+    {
+        transform: translateX(5px);
     }
 }
 
@@ -421,7 +420,6 @@ section.navigation
     margin: auto;
     margin-bottom: 5rem;
     position: relative;
-    z-index: 120;
 
     .container-navigation
     {
@@ -470,40 +468,12 @@ section.navigation
     }
 
     .container-menu
-    {
-        position: absolute;
-        left: 0;
-        
+    {       
         padding: 10rem 1rem 10rem 1rem;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 100px;
-
-        opacity: 0;
-
-        &.activeContenu
-        {
-            animation: fade 650ms ease-out forwards;
-        
-            @keyframes fade
-            {
-                0%
-                {
-                    opacity: 0.2;
-                    transform: translateY(90px);
-                }
-                50%
-                {
-                    opacity: 0.5;
-                }
-                100%
-                {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            } 
-        } 
+        gap: 100px; 
 
         &::before
         {
@@ -569,13 +539,29 @@ section.navigation
 
                 .price
                 {
-                    
                     font-family: $fontPin;
                     font-size: 4rem;
                     color: $primaire;
                 }
             }
-            
         }
+    }
+}
+
+section.reservation 
+{
+    max-width: 1050px;
+    margin: auto;
+
+    div.block-chief 
+    {
+        display: flex;
+        // flex-wrap: wrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    img {
+        width: 300px;
     }
 }
