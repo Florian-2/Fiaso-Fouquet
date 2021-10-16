@@ -32,37 +32,36 @@ nav.addEventListener('touchend', () =>
     }
 });
 
-
 // Onglets
-// let indexData = 0;
+let indexData = 0;
 
-// ongletsLinks.forEach(link => 
-// {
-//     link.addEventListener('click', () =>
-//     {
-//         link.classList.add('active');
+ongletsLinks.forEach(link => 
+{
+    link.addEventListener('click', () =>
+    {
+        link.classList.add('active');
         
-//         indexData = link.dataset.anim;
-//         console.log(indexData);
+        indexData = link.dataset.anim;
+        console.log(indexData);
 
-//         for (let i = 0; i < ongletsLinks.length; i++) 
-//         {
-//             if(ongletsLinks[i].dataset.anim != indexData)
-//             {
-//                 ongletsLinks[i].classList.remove('active');
-//             }
-//         }
+        for (let i = 0; i < ongletsLinks.length; i++) 
+        {
+            if(ongletsLinks[i].dataset.anim != indexData)
+            {
+                ongletsLinks[i].classList.remove('active');
+            }
+        }
 
-//         for (let c = 0; c < contenu.length; c++) 
-//         {
-//             if(contenu[c].dataset.anim == indexData)
-//             {
-//                 contenu[c].classList.add('activeContenu');
-//             }
-//             else
-//             {
-//                 contenu[c].classList.remove('activeContenu');
-//             }
-//         }
-//     }); 
-// });
+        for (let c = 0; c < contenu.length; c++) 
+        {
+            if(contenu[c].dataset.anim == indexData)
+            {
+                contenu[c].classList.add('activeContenu');
+            }
+            else
+            {
+                contenu[c].classList.remove('activeContenu');
+            }
+        }
+    }); 
+});
