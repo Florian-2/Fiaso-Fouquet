@@ -35,8 +35,11 @@ img {
 
 header {
   width: 100%;
-  height: 80vh;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(126, 74, 74, 0.4)), url("../img/eggs.jpg") center center/cover no-repeat;
+  height: 100vh;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(54, 54, 54, 0.5) 39.24%, rgba(126, 74, 74, 0.4)), url("../img/eggs.jpg");
+  background-position-y: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   position: relative;
 }
