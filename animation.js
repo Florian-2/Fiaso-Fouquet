@@ -90,6 +90,7 @@ gsap.from(menu, {
         trigger: 'section.navigation',
         start: "top-=300 center",
         end: "bottom+=200 center",
+        // markers: true,
         toggleActions: "play reverse play none",
     }
 });
@@ -97,7 +98,7 @@ gsap.from(['section.navigation nav a'], {
     ...fade,
     scrollTrigger: {
         trigger: 'section.navigation',
-        start: "top-=300 center",
+        start: "top-=100 center",
         end: "bottom+=200 center",
         toggleActions: "play reverse play none",
     }
